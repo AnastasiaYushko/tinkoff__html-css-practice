@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Тинькофф</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,46 +22,78 @@
     <div class="search-box">
 
       <form class="search-box-form">
-        <div class="search-box-form__magnifier">
-          <div class="search-box-form__ellipse"></div>
-          <div class="search-box-form__vector"></div>
+        <div class="search-box-form__components">
+          <div class="search-box-form__magnifier"><img src="image/search.svg" class="mag" alt="Лупа"></div>
         </div>
-        <div class="search-box-form__input"><input type="text" placeholder="Поиск фильмов по жанрам и актерам"></div>
-        <a href="#" class="close"></a>
+        <div class="search-box-form__components">
+          <div class="search-box-form__input"><input type="text" placeholder="Поиск фильмов по жанрам и актерам"></div>
+        </div>
       </form>
 
       <div class="search-box_active">
-
-        <div class="search-box__block1">Как я встретил мамку</div>
-        <div class="search-box__block2">Гоп-стоп</div>
-        <div class="search-box__block3">Весенний дрозд</div>
-
+        <div class="search-box__blocks">
+          <div class="search-box__block1">Как я встретил мамку</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block2">Гоп-стоп</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block3">Весенний дрозд</div>
+        </div>
       </div>
 
-      <div class="search-box_active-more-history">
+      <div class="search-box_active search-box_active_more-history">
+        <div class="search-box__blocks">
+          <div class="search-box__block1">Как я встретил мамку</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block2">Гоп-стоп</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block3">Весенний дрозд</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block4">Белоснежка и семь гномов</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block5">Трое в лодке</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block6">Бандитский петербург</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block7">Спящая женщина и принц</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block8">Война миров</div>
+        </div>
+        <div class="search-box__blocks">
+          <div class="search-box__block9">Дикий дикий дикий запад</div>
+        </div>
+      </div>
 
-        <div class="search-box__block1">Как я встретил мамку</div>
-        <div class="search-box__block2">Гоп-стоп</div>
-        <div class="search-box__block3">Весенний дрозд</div>
-        <div class="search-box__block4">Белоснежка и семь гномов</div>
-        <div class="search-box__block5">Трое в лодке</div>
-        <div class="search-box__block6">Бандитский петербург</div>
-        <div class="search-box__block7">Спящая женщина и принц</div>
-        <div class="search-box__block8">Война миров</div>
-        <div class="search-box__block9">Дикий дикий дикий запад</div>
+      <div class="scroll">
+
+        <div class="scroll__search-panel">
+          <div class="scroll__mag"><img src="image/search.svg" class="mag" alt="Лупа"></div>
+          <form class="scroll__form ">
+            <input type="text" placeholder="  ">
+          </form>
+          <div class="close"></div>
+        </div>
 
       </div>
 
     </div>
 
-
     <div class="results">
       <h2 class="results__title-results">Нашли 82 фильма</h2>
       <div class="results__grid-container ">
-        <div class="results__box"><img src="image/ForestGamp.jpg" alt="forestGamp"></div>
-        <div class="results__box"><img src="image/SavedPrivateRyan.jpg" alt="saveRyan"></div>
-        <div class="results__box"><img src="image/Apollon.jpg" alt="Apollon"></div>
-        <div class="results__box"><img src="image/Inferno.png" alt="Inferno"></div>
+        <div class="results__box"><img src="image/ForestGamp.jpg" class="results__box__image" alt="forestGamp"></div>
+        <div class="results__box"><img src="image/SavedPrivateRyan.jpg" class="results__box__image" alt="saveRyan">
+        </div>
+        <div class="results__box"><img src="image/Apollon.jpg" class="results__box__image" alt="Apollon"></div>
+        <div class="results__box"><img src="image/Inferno.png" class="results__box__image" alt="Inferno"></div>
         <div class="results__box">
           <div class="results__box-info">
             <div class="results__box-name">Шпионский мост</div>
@@ -71,12 +103,9 @@
             </div>
           </div>
         </div>
-        <div class="results__box"><img src="image/Gudzon.png" alt="Gudzon"></div>
-        <div class="results__box">
-          <div class="results__box-picture"><img src="image/Dragon.jpg" alt="Dragon"></div>
-            <div class="result__box-rating">👍4,8</div>
-        </div>
-        <div class="results__box"><img src="image/Terminal.png" alt="Terminal"></div>
+        <div class="results__box"><img src="image/Gudzon.png" class="results__box__image" alt="Gudzon"></div>
+        <div class="results__box"><img src="image/Dragon.jpg" class="results__box__image" alt="Dragon"></div>
+        <div class="results__box"><img src="image/Terminal.png" class="results__box__image" alt="Terminal"></div>
         <div class="results__box">
           <div class="results__info-films">
             <div class="results__name-films"></div>
@@ -126,14 +155,11 @@
       <div class="search_not_found">Мы не поняли о чем речь ¯\_(ツ)_/¯</div>
     </div>
 
-    <div class="scroll">
-      <div class="scroll__search-panel"></div>
-      <a href="#" class="close"></a>
-    </div>
-
   </main>
 
-  <footer class="footer">© 2019 Тинькофф Прокат</footer>
+  <footer class="search__footer">
+    <p class="search__footer__text">© 2019 Тинькофф Прокат</p>
+  </footer>
 
 </body>
 
