@@ -1,0 +1,21 @@
+footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-left: calc(50% - 64px);
+}
+
+.search__footer {
+    margin-top: 80px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.search__footer__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,33 @@
+.no-results {
+    display: none;
+    margin: 100px 0px 100px 0px;
+    box-sizing: border-box;
+}
+
+.not_found_result {
+    width: 604px;
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    align-items: center;
+    color: #FFFFFF
+}
+
+.search_not_found .no-results {
+    display: block;
+}
+
+.search_not_found .search-box__blocks div:nth-child(n) {
+    display: none;
+}
+
+.search_not_found .search-box__blocks div:nth-child(-n+3) {
+    display: inline-flex;
+}
+
+.search_not_found .results-found {
+    display: none;
+}
